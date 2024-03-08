@@ -89,6 +89,7 @@ CREATE TABLE IF NOT EXISTS `grom_config`.`env`(
     `id`                               INT AUTO_INCREMENT,
     `name`                             VARCHAR(100) NOT NULL,
     `prefix`                           VARCHAR(256),
+    `comment`                          VARCHAR(256),
     `notification`                     VARCHAR(256),
     `notification_token`               VARCHAR(256),
     `is_callback`                      BOOL DEFAULT FALSE,
