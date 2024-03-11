@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `grom_admin`.`role`(
 CREATE TABLE IF NOT EXISTS `grom_admin`.`token`(
    `id`                               INT AUTO_INCREMENT,
    `tokenname`                        VARCHAR(64) NOT NULL,
-   `key`                              VARCHAR(64) NOT NULL,
+   `tokenkey`                         VARCHAR(64) NOT NULL,
    `payload`                          VARCHAR(256) DEFAULT '',
    PRIMARY KEY (`id`),
    UNIQUE KEY(`tokenname`)
