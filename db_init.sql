@@ -62,6 +62,7 @@ CREATE TABLE IF NOT EXISTS `grom_config`.`general_version`(
     `name`                             VARCHAR(100) NOT NULL,
     `content`                          Text,
     `status`                           VARCHAR(255) NOT NULL,
+    `is_publish`                       BOOL DEFAULT FALSE,
     `publish_time`                     TIMESTAMP(6) DEFAULT NULL,
     `publisher`                        VARCHAR(50) DEFAULT NULL,
     `update_time`                      TIMESTAMP(6) NOT NULL,
