@@ -39,6 +39,6 @@ fi
 
 sed -ri "s/(domain=)[^=]*/\1$LOCAL_IP/" grom-gateway.sh
 
-sh grom-admin.sh v1
-sh grom-config.sh v1
-sh grom-gateway.sh v1
+sh grom-admin.sh latest
+sh grom-config.sh latest
+sh grom-gateway.sh latest
