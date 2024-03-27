@@ -1,9 +1,9 @@
 #!/bin/bash
 
 current_dir=`pwd`
-image=grom-admin:$1
+image=registry.cn-beijing.aliyuncs.com/wilsonchai/grom-admin:$1
 name=grom-admin
-#docker pull $image
+docker pull $image
 docker rm -f $name
 docker run -d --restart=always  --name=$name\
     -v $current_dir/grom_admin_app.conf:/opt/grom-admin/app.conf \
