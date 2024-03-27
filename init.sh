@@ -34,7 +34,11 @@ if [ $COMFIRM_RESULT = 'yes' ];then
     echo "init success..."
 else
     echo "init failed, please retry..."
+    exit 255
 fi
 
+sed -ri "s/(domain=)[^=]*/\1$LOCAL_IP/" grom-gateway.sh
 
-
+sh grom-admin.sh v1
+sh grom-config.sh v1
+sh grom-gateway.sh v1
