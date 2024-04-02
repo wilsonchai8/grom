@@ -94,6 +94,7 @@ CREATE TABLE IF NOT EXISTS `grom_config`.`env`(
     `notification`                     VARCHAR(256),
     `notification_token`               VARCHAR(256),
     `is_callback`                      BOOL DEFAULT FALSE,
+    `callback_token_name`              VARCHAR(256),
     `callback_token`                   VARCHAR(256),
     `update_time`                      TIMESTAMP(6),
     `modifier`                         VARCHAR(64),
